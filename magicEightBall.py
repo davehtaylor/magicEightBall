@@ -6,6 +6,7 @@
 # return that answer to the user. 
 
 import random                                   # Import random so we can randomly choose a response from the responses[] list.
+import time                                     # Import time so we can use the sleep() function to add a dramatic pause to the response.
 
 responses = ["It is certain",                   # List of the responses presented to the user. 
              "It is decidedly so",
@@ -28,6 +29,7 @@ responses = ["It is certain",                   # List of the responses presente
              "Outlook not so good",
              "Very doubtful"]
 
+print "\n"
 print "******************************"          # Pretty banner when the program runs
 print "*      Magic Eight Ball      *"
 print "******************************"
@@ -37,6 +39,14 @@ print "\n"
 print "Ask a question of the Magic Eight Ball then hit the 'Enter' key to shake the ball and receive your answer.\n"
 
 selection = raw_input()                         # Wait for the user to hit "Enter" before presenting the answer. 
+
+print "Contemplating "                          # Give some pause to appear to be thinking about the answer. 
+time.sleep(0.5)                                 # Wait half a second between printing each of the periods
+print "." 
+time.sleep(0.5)
+print "." 
+time.sleep(0.5)
+print ".\n"
 
 print (random.choice(responses))                # Choose a random response from the responses[] list and print it out.
 print "\n"

@@ -30,13 +30,15 @@ responses = ["It is certain",                   # List of the responses presente
              "Very doubtful"]
 
 print "\n"
-print "******************************"          # Pretty banner when the program runs
-print "*      Magic Eight Ball      *"
-print "******************************"
+print "**************************************"          # Pretty banner when the program runs
+print "*          Magic Eight Ball          *"
+print "**************************************"
 
 print "\n"
 
-print "Ask a question of the Magic Eight Ball then hit the 'Enter' key to shake the ball and receive your answer.\n"
+print "Ask a question of the Magic Eight Ball"
+print "then hit the 'Enter' key to shake the"
+print "ball and receive your answer.\n"
 
 selection = raw_input()                         # Wait for the user to hit "Enter" before presenting the answer. 
 
@@ -48,5 +50,5 @@ print "."
 time.sleep(0.5)
 print ".\n"
 
-print (random.choice(responses))                # Choose a random response from the responses[] list and print it out.
+print "*** " + (random.choice(responses)) + " ***"                # Choose a random response from the responses[] list and print it out.
 print "\n"

@@ -33,22 +33,22 @@ print "\n"
 print "**************************************"          # Pretty banner when the program runs
 print "*          Magic Eight Ball          *"
 print "**************************************"
-
 print "\n"
 
 print "Ask a question of the Magic Eight Ball"
 print "then hit the 'Enter' key to shake the"
 print "ball and receive your answer.\n"
 
-selection = raw_input()                         # Wait for the user to hit "Enter" before presenting the answer. 
+raw_input("Hit enter to shake the ball...\n")   # Wait for the user to hit "Enter" before presenting the answer. 
 
 print "Contemplating "                          # Give some pause to appear to be thinking about the answer. 
-time.sleep(0.5)                                 # Wait half a second between printing each of the periods
+time.sleep(1)                                 # Wait half a second between printing each of the periods
 print "." 
-time.sleep(0.5)
+time.sleep(1)
 print "." 
-time.sleep(0.5)
+time.sleep(1)
 print ".\n"
+time.sleep(1)
 
-print "*** " + (random.choice(responses)) + " ***"                # Choose a random response from the responses[] list and print it out.
+print "*** " + (random.choice(responses)) + " ***"      # Choose a random response from the responses[] list and print it out.
 print "\n"

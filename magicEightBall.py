@@ -8,6 +8,15 @@
 import random                                   # Import random so we can randomly choose a response from the responses[] list.
 import time                                     # Import time so we can use the sleep() function to add a dramatic pause to the response.
 
+def thinking():                                 # Give some pause to appear to be thinking about the answer.
+    print "Contemplating " 
+    time.sleep(1) 
+    print "." 
+    time.sleep(1) 
+    print "."
+    time.sleep(1) 
+    print ".\n"                          
+
 responses = ["It is certain",                   # List of the responses presented to the user. 
              "It is decidedly so",
              "Without a doubt",
@@ -39,16 +48,8 @@ print "Ask a question of the Magic Eight Ball"
 print "then hit the 'Enter' key to shake the"
 print "ball and receive your answer.\n"
 
-raw_input("Hit enter to shake the ball...\n")   # Wait for the user to hit "Enter" before presenting the answer. 
+raw_input("Hit enter to shake the ball...\n")           # Wait for the user to hit "Enter" before presenting the answer. 
 
-print "Contemplating "                          # Give some pause to appear to be thinking about the answer. 
-time.sleep(1)                                 # Wait half a second between printing each of the periods
-print "." 
-time.sleep(1)
-print "." 
-time.sleep(1)
-print ".\n"
-time.sleep(1)
+thinking()
 
-print "*** " + (random.choice(responses)) + " ***"      # Choose a random response from the responses[] list and print it out.
-print "\n"
+print "*** " + (random.choice(responses)) + " ***\n"      # Choose a random response from the responses[] list and print it out.

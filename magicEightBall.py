@@ -5,17 +5,14 @@
 # answers, some negative, some positive, some neutral. This program will choose one of the answers from the list at random and 
 # return that answer to the user. 
 
-import random                                   # Import random so we can randomly choose a response from the responses[] list.
-import time                                     # Import time so we can use the sleep() function to add a dramatic pause to the response.
+import random                                   # Import random so we can use the random.choice() function to choose a response from the responses[] list.
+import time                                     # Import time so we can use the time.sleep() function to add a dramatic pause to the response.
 
 def thinking():                                 # Give some pause to appear to be thinking about the answer.
     print "Contemplating " 
-    time.sleep(1) 
-    print "." 
-    time.sleep(1) 
-    print "."
-    time.sleep(1) 
-    print ".\n"                          
+    for iteration in xrange(3):
+         time.sleep(1) 
+         print "." 
 
 responses = ["It is certain",                   # List of the responses presented to the user. 
              "It is decidedly so",
@@ -52,4 +49,4 @@ raw_input("Hit enter to shake the ball...\n")           # Wait for the user to h
 
 thinking()
 
-print "*** " + (random.choice(responses)) + " ***\n"      # Choose a random response from the responses[] list and print it out.
+print "\n*** " + (random.choice(responses)) + " ***\n"      # Choose a random response from the responses[] list and print it out.

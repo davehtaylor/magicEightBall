@@ -22,7 +22,7 @@ import time
 def thinking():
     """Give some pause to appear to be thinking about the answer."""
 
-    print "Contemplating "
+    print "\nContemplating "
     for iteration in xrange(3):
         time.sleep(1)
         print "."
@@ -58,7 +58,7 @@ print "Ask a question of the Magic Eight Ball"
 print "then hit the 'Enter' key to shake the"
 print "ball and receive your answer.\n"
 
-raw_input("Hit enter to shake the ball...\n")
+raw_input("Type your question then hit enter:\n\n")
 
 thinking()
 

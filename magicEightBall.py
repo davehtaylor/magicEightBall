@@ -64,4 +64,4 @@ raw_input("Type your question then hit enter:\n\n")
 
 thinking()
 
-print "\n*** " + (random.choice(responses)) + " ***\n"
+print "\n*** " + random.choice(responses) + " ***\n"

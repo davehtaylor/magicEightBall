@@ -22,12 +22,13 @@ import time
 
 
 def thinking():
-    """Give some pause to appear to be thinking about the answer."""
-
-    print "\nContemplating "
-    for iteration in xrange(3):
+    """
+    Give some pause to appear to be thinking about the answer.
+    """
+    print("\nContemplating ")
+    for i in range(3):
         time.sleep(1)
-        print "."
+        print(".")
 
 responses = ["It is certain",
              "It is decidedly so",
@@ -50,18 +51,18 @@ responses = ["It is certain",
              "Outlook not so good",
              "Very doubtful"]
 
-print "\n"
-print "**************************************"
-print "*          Magic Eight Ball          *"
-print "**************************************"
-print "\n"
+print("\n")
+print("**************************************")
+print("*          Magic Eight Ball          *")
+print("**************************************")
+print("\n")
 
-print "Ask a question of the Magic Eight Ball"
-print "then hit the 'Enter' key to shake the"
-print "ball and receive your answer.\n"
+print("Ask a question of the Magic Eight Ball")
+print("then hit the 'Enter' key to shake the")
+print("ball and receive your answer.\n")
 
-raw_input("Type your question then hit enter:\n\n")
+input("Type your question then hit enter:\n\n")
 
 thinking()
 
-print "\n*** " + random.choice(responses) + " ***\n"
+print("\n*** " + random.choice(responses) + " ***\n")
